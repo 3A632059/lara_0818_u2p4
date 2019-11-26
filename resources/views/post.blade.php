@@ -3,7 +3,7 @@
 @section('content')
 
 
-<body>
+
 <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
     <div class="container">
         <div class="row">
@@ -67,6 +67,6 @@
 
     @endsection
 
-</body>
 
-</html>
+
+
