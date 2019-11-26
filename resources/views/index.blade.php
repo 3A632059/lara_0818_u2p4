@@ -1,29 +1,28 @@
 @extends('layouts.master')
 @section('title', 'Clean Blog')
 @section('content')
-
-
-<body>
-
-<header class="intro-header" style="background-image: url('img/home-bg.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Clean Blog</h1>
-                    <hr class="small">
-                    <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Clean Blog</h1>
+                        <hr class="small">
+                        <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
+
     <!-- Main Content -->
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-preview">
-                    <a href="post.html">
+                    <a href="{{route('posts.show')}}">
                         <h2 class="post-title">
                             Man must explore, and this is exploration at its greatest
                         </h2>
@@ -35,7 +34,7 @@
                 </div>
                 <hr>
                 <div class="post-preview">
-                    <a href="post.html">
+                    <a href="{{route('posts.show')}}">
                         <h2 class="post-title">
                             I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
                         </h2>
@@ -44,7 +43,7 @@
                 </div>
                 <hr>
                 <div class="post-preview">
-                    <a href="post.html">
+                    <a href="{{route('posts.show')}}">
                         <h2 class="post-title">
                             Science has not yet mastered prophecy
                         </h2>
@@ -56,7 +55,7 @@
                 </div>
                 <hr>
                 <div class="post-preview">
-                    <a href="post.html">
+                    <a href="{{route('posts.show')}}">
                         <h2 class="post-title">
                             Failure is not an option
                         </h2>
@@ -76,12 +75,5 @@
             </div>
         </div>
     </div>
-
-    <hr>
-
-    @endsection
-
-</body>
-
-</html>
+@endsection
 
